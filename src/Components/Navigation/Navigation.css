@@ -1,5 +1,7 @@
 .navigation-container{
     width: 100%;
+    position: absolute;
+    top:0;
     height: fit-content;
     display: flex;
     justify-content: center;

@@ -24,20 +24,21 @@ export default function MainScreen() {
           <div className="value-card">
             <img src={Confidentiality} className="value-image" alt="confidentiality"></img>
             <div className="value-title">Confidentiality</div>
-            <p>Your personal data are safe with us. We will not share any details about you to anyone.</p>
+            <p>All our meetings are confidential and your information is protected</p>
           </div>
           <div className="value-card">
             <img src={Support} className="value-image" alt="confidentiality"></img>
             <div className="value-title">Support 24/7</div>
-            <p>You can contact us any time of any day if you feel unwell. One of our doctors will help you.</p>
+            <p>You can call me any time of the day. I am always ready to support you in any difficult situation.</p>
           </div>
           <div className="value-card">
             <img src={Reliability} className="value-image" alt="confidentiality"></img>
             <div className="value-title">Reliability</div>
-            <p>Lorem Ipsum lakrimosa bobota kses bro enap rama tetoio</p>
+            <p>I will never leave you in a difficult moment. Call me right now and make an appointment.</p>
           </div>
         </div>
       </div>
+      <div className="doctor-info-container">doctor container</div>
       <Footer />
     </div>
   );
