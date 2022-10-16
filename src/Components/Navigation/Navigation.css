@@ -1,0 +1,37 @@
+.navigation-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navigation-link{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    width: fit-content;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: 0 2rem;
+}
+
+.navigation-link:hover{
+    color: rgb(136, 136, 136);
+}
+
+.logo-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.doctor-logo{
+    width: 300px;
+}
