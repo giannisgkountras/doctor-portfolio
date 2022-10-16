@@ -1,0 +1,102 @@
+.main-screen-container{
+
+}
+
+.happy-family-container{
+    background-image: url("../../Assets/happy-family.webp");
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.passion{
+    color: #412C21;
+    font-size: 4vw;
+    width: 40%;
+    margin-left: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.make-appointment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+}
+
+.appointment-button{
+    background-color: #2B201F;
+    width: 290px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.appointment-button:hover{
+    opacity: 0.8;
+
+}
+
+.appointment-button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.value-container{
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.value-container h1{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+        
+}
+
+.value-card{
+    border-radius: 20px;
+    width: 15vw;
+    height: 280px;
+    background-color: #fbf9f741;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.value-title{
+    font-size: 40px;
+    color: rgb(0, 55, 102);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.value-image{
+    height: 70px;
+    margin-top: 1rem;
+}
