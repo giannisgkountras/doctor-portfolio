@@ -16,7 +16,7 @@ export default function MainScreen() {
         <div className="passion">Discover the secret of living life with passion!</div>
         <div className="make-appointment">
           <div className="appointment-button">
-            <a href="/appointment"> Make Appointment</a>
+            <a href="#appointment"> Make Appointment</a>
           </div>
         </div>
       </div>
@@ -70,28 +70,50 @@ export default function MainScreen() {
         <div className="office-title">
           <h1>Our office</h1>
         </div>
-        {/* <div className="row"> */}
         <ImageSlider />
-        {/* <div className="office-info">
-            <div className="office-details">
-              <p>
-                Dr. Edie Hoyles was born in DuBois, Pennsylvania and is a graduate of Aristotle University of Thessaloniki. She obtained her medical degree at Thomas Jefferson University in
-                Philadelphia. Hes residency was at Thomas Jefferson and its affiliated Wills Eye Hospital, and she completed her training with fellowships at the University of Connecticut in cataract
-                and corneal surgery.
-              </p>
-              <p className="smaller">
-                Edie Hoyles, CNM is originally from Springfield, MA. She received her nursing degree from Burbank Hospital School of Nursing in Fitchburg, MA. Pamela received her Certificate in
-                Nurse-Midwifery from Baystate Medical Center in Springfield, MA.
-              </p>
-            </div>
-            <div className="learn-more-button">
-              <a href="/about" className="learn-more">
-                Learn More
-              </a>
-            </div>
-          </div> */}
-        {/* </div> */}
+        <div className="office-info">
+          <div className="office-details">
+            <p>
+              Our medical office is equipped with the best of the best. Cutting edge technology machinery that help the doctor identify exactly what your problem is and provide viable and real
+              solutions. The waiting room is very comfortable with a pleasant atmosphere that makes the situation a little better. Do not hesitate to have a drink and eat from our fresh fruit while
+              you wait for the doctor to see you.
+            </p>
+            <p className="smaller">Our office was recently renovated. New colors, new furniture but most importantly the newest medical equipment that exists today. All that for every one of you. </p>
+          </div>
+        </div>
+        <div className="directions-button">
+          <a
+            href="https://www.google.com/maps/dir/40.6381,22.9455/%CE%A6%CF%81%CE%AC%CE%B3%CE%BC%CE%B1+%CE%A3%CF%86%CE%B7%CE%BA%CE%B9%CE%AC%CF%82,+%CE%92%CE%AD%CF%81%CE%BF%CE%B9%CE%B1+591+32/@40.5237035,22.4119388,11z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x13578b4886dd2039:0x838e4ef4e8c1c47f!2m2!1d22.1924891!2d40.3963318!3e0"
+            className="learn-more"
+          >
+            Show directions
+          </a>
+        </div>
       </div>
+
+      <div className="appointment" id="appointment">
+        <div className="row">
+          <div className="full-wide">
+            <div className="appointment-title">Make an appointment!</div>
+          </div>
+          <div className="form-container">
+            <form action="https://public.herotofu.com/v1/ff38ad90-4f3c-11ed-8970-6943e4ac8982" method="post">
+              <div className="column">
+                <label for="name">Your Name</label>
+                <input name="Name" id="name" type="text" required />
+              </div>
+              <div>
+                <label for="email">Your Email</label>
+                <input name="Email" id="email" type="email" required />
+              </div>
+              <div>
+                <input type="submit" value="Download CTA" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );

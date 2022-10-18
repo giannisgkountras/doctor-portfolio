@@ -6,17 +6,21 @@ import Appointment from "./Screens/Appointment/Appointment";
 import Blog from "./Screens/Blog/Blog";
 import Contact from "./Screens/Contact/Contact";
 
+import "./App.css";
+
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path={"/"} element={<MainScreen />} />
-        <Route path={"/about"} element={<About />} />
-        <Route path={"/appointment"} element={<Appointment />} />
-        <Route path={"/blog"} element={<Blog />} />
-        <Route path={"/contact"} element={<Contact />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="app">
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<MainScreen />} />
+          <Route path={"/about"} element={<About />} />
+          <Route path={"/appointment"} element={<Appointment />} />
+          <Route path={"/blog"} element={<Blog />} />
+          <Route path={"/contact"} element={<Contact />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

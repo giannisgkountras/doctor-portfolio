@@ -1,4 +1,5 @@
 .main-screen-container{
+    overflow-y: hidden;
 }
 
 .happy-family-container{
@@ -186,7 +187,7 @@
 
 .office-info-container {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -207,11 +208,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .office-details {
-    width: 500px;
+    width: 800px;
 }
 
 .office-info p {
@@ -219,9 +220,66 @@
 }
 
 .row{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.column{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.directions-button{
+    width: 200px;
+    height: 50px;
+    background-color: #60B2E8;
+    transition: 0.5s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.directions-button:hover {
+    opacity: 0.8;
+}
+
+.appointment{
+    background-image: url("../../Assets/happy-family-2.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.appointment-title{
+    color: beige;
+    text-shadow: 2px 2px #412C21;
+    font-size: 80px;
+    width: 40%;
+    margin-left: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.form-container{
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px);
+    background-color: #ededed80;
+    margin: 0 10rem;
+}
+
+.full-wide{
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -255,7 +313,7 @@
     .doctor-info-container{
         flex-direction: column;
         height: fit-content;
-        padding: 1rem 0;;
+        padding: 1rem 0;
     }
     .doctor-info{
         margin:0;
@@ -285,5 +343,29 @@
     }
     .smaller{
         font-size: 14px!important;
+    }
+    
+    .office-info-container {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem 0;
+        }
+    
+    .office-title h1 {
+        font-size: 40px;
+    }
+
+    .office-info {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .office-details {
+        width: 350px;
+    }
+
+    .office-info p {
+        font-size: 16px
     }
 }
