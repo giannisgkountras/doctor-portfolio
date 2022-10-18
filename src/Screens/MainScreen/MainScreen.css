@@ -184,6 +184,45 @@
     align-items: center;
 }
 
+.office-info-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.office-title h1 {
+    color: rgb(0, 55, 102);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    margin: 0 0 1rem 0;
+}
+
+.office-info {
+    width: 100%;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.office-details {
+    width: 500px;
+}
+
+.office-info p {
+    font-size: 20px
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
 @media screen and (max-width: 1200px) {
     .happy-family-container{

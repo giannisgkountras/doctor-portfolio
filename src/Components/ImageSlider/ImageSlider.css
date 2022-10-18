@@ -1,0 +1,28 @@
+.image-slider-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.office-img{
+    width: 800px;
+}
+
+
+.slide-button{
+    font-size: 60px;
+    color: #412C21;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .office-img{
+        width: 300px;
+    }
+    .slide-button{
+        font-size: 30px;
+    }
+}

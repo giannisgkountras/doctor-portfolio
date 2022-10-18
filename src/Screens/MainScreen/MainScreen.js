@@ -6,6 +6,7 @@ import Confidentiality from "../../Assets/confidentiality.png";
 import Support from "../../Assets/support.png";
 import Reliability from "../../Assets/reliability.png";
 import Doctor from "../../Assets/doctor.png";
+import ImageSlider from "../../Components/ImageSlider/ImageSlider";
 
 export default function MainScreen() {
   return (
@@ -64,6 +65,32 @@ export default function MainScreen() {
             </a>
           </div>
         </div>
+      </div>
+      <div className="office-info-container">
+        <div className="office-title">
+          <h1>Our office</h1>
+        </div>
+        {/* <div className="row"> */}
+        <ImageSlider />
+        {/* <div className="office-info">
+            <div className="office-details">
+              <p>
+                Dr. Edie Hoyles was born in DuBois, Pennsylvania and is a graduate of Aristotle University of Thessaloniki. She obtained her medical degree at Thomas Jefferson University in
+                Philadelphia. Hes residency was at Thomas Jefferson and its affiliated Wills Eye Hospital, and she completed her training with fellowships at the University of Connecticut in cataract
+                and corneal surgery.
+              </p>
+              <p className="smaller">
+                Edie Hoyles, CNM is originally from Springfield, MA. She received her nursing degree from Burbank Hospital School of Nursing in Fitchburg, MA. Pamela received her Certificate in
+                Nurse-Midwifery from Baystate Medical Center in Springfield, MA.
+              </p>
+            </div>
+            <div className="learn-more-button">
+              <a href="/about" className="learn-more">
+                Learn More
+              </a>
+            </div>
+          </div> */}
+        {/* </div> */}
       </div>
       <Footer />
     </div>
