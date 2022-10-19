@@ -118,9 +118,10 @@ export default function MainScreen() {
                 <label for="address">Appointment's Date</label>
                 <input type="date" id="start" name="trip-start" value="2022-11-22" min="2022-11-22" max="2025-12-31" className="date"></input>
               </div>
-              <div className="appointment-button" type="submit">
+
+              <button className="appointment-button" type="submit">
                 Make appointment
-              </div>
+              </button>
             </form>
           </div>
         </div>
