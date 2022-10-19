@@ -93,20 +93,34 @@ export default function MainScreen() {
 
       <div className="appointment" id="appointment">
         <div className="row">
-          <div className="full-wide">
-            <div className="appointment-title">Make an appointment!</div>
-          </div>
+          {/* <div className="full-wide"> */}
+          <div className="appointment-title">Make an appointment!</div>
+          {/* </div> */}
           <div className="form-container">
             <form action="https://public.herotofu.com/v1/ff38ad90-4f3c-11ed-8970-6943e4ac8982" method="post">
-              <div className="column">
+              <h1>Personal Information</h1>
+
+              <div className="form-column">
                 <label for="name">Your Name</label>
-                <input name="Name" id="name" type="text" required />
+                <input name="Name" id="name" type="text" placeholder="Name" required className="appointment-input" />
               </div>
-              <div>
+              <div className="form-column">
                 <label for="email">Your Email</label>
-                <input name="Email" id="email" type="email" required />
+                <input name="Email" id="email" type="email" placeholder="E-mail" required className="appointment-input" />
               </div>
-              <div>
+              <div className="form-column">
+                <label for="cellphone">Your phone number</label>
+                <input name="Phone" id="phone" type="phone" placeholder="Phone Number" required className="appointment-input" />
+              </div>
+              <div className="form-column">
+                <label for="address">Your Address</label>
+                <input name="Address" id="address" type="address" placeholder="Address" required className="appointment-input" />
+              </div>
+              <div className="form-column">
+                <label for="address">Appointment's Date</label>
+                <input type="date" id="start" name="trip-start" value="2022-11-22" min="2022-11-22" max="2025-12-31" className="date"></input>
+              </div>
+              <div className="form-column">
                 <input type="submit" value="Download CTA" />
               </div>
             </form>
