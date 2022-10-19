@@ -1,5 +1,5 @@
 .main-screen-container{
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .happy-family-container{
@@ -344,7 +344,7 @@
     }
     .passion{
         font-size: 50px;
-        width: 100%;
+        width: 80%;
         margin: 0;
         color: beige;
         text-shadow: 2px 2px #412C21;
