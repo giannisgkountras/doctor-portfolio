@@ -13,7 +13,9 @@ export default function MainScreen() {
         <div className="main-screen-container">
             <Navigation />
             <div className="happy-family-container">
-                <div className="passion">Discover the secret of living life with passion!</div>
+                <div className="passion">
+                    Discover the secret of living life with passion!
+                </div>
                 <div className="make-appointment">
                     <div className="appointment-button">
                         <a href="#appointment"> Make Appointment</a>
@@ -24,23 +26,44 @@ export default function MainScreen() {
                 <h1>You are our priority!</h1>
                 <div className="cards">
                     <div className="value-card">
-                        <img src={Confidentiality} className="value-image" alt="confidentiality"></img>
+                        <img
+                            src={Confidentiality}
+                            className="value-image"
+                            alt="confidentiality"
+                        ></img>
                         <div className="value-title">Confidentiality</div>
-                        <p>All our meetings are confidential and your information is protected</p>
+                        <p>
+                            All our meetings are confidential and your
+                            information is protected
+                        </p>
                     </div>
                     <div className="value-card">
-                        <img src={Support} className="value-image" alt="confidentiality"></img>
+                        <img
+                            src={Support}
+                            className="value-image"
+                            alt="confidentiality"
+                        ></img>
                         <div className="value-title">Support 24/7</div>
-                        <p>You can call me any time of the day. I am always ready to support you in any difficult situation.</p>
+                        <p>
+                            You can call me any time of the day. I am always
+                            ready to support you in any difficult situation.
+                        </p>
                     </div>
                     <div className="value-card">
-                        <img src={Reliability} className="value-image" alt="confidentiality"></img>
+                        <img
+                            src={Reliability}
+                            className="value-image"
+                            alt="confidentiality"
+                        ></img>
                         <div className="value-title">Reliability</div>
-                        <p>I will never leave you in a difficult moment. Call me right now and make an appointment.</p>
+                        <p>
+                            I will never leave you in a difficult moment. Call
+                            me right now and make an appointment.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div className="doctor-info-container">
+            <div id="about" className="doctor-info-container">
                 <div className="doctor-image">
                     <img src={Doctor} alt="doctor"></img>
                 </div>
@@ -50,17 +73,25 @@ export default function MainScreen() {
                         <h2>Professional Cardiologist </h2>
                         <h3>Aristotle University of Thessaloniki</h3>
                         <p>
-                            Dr. Edie Hoyles was born in DuBois, Pennsylvania and is a graduate of Aristotle University of Thessaloniki. She obtained her medical degree at Thomas Jefferson University
-                            in Philadelphia. Hes residency was at Thomas Jefferson and its affiliated Wills Eye Hospital, and she completed her training with fellowships at the University of
-                            Connecticut in cataract and corneal surgery.
+                            Dr. Edie Hoyles was born in DuBois, Pennsylvania and
+                            is a graduate of Aristotle University of
+                            Thessaloniki. She obtained her medical degree at
+                            Thomas Jefferson University in Philadelphia. Hes
+                            residency was at Thomas Jefferson and its affiliated
+                            Wills Eye Hospital, and she completed her training
+                            with fellowships at the University of Connecticut in
+                            cataract and corneal surgery.
                         </p>
                         <p className="smaller">
-                            Edie Hoyles, CNM is originally from Springfield, MA. She received her nursing degree from Burbank Hospital School of Nursing in Fitchburg, MA. Pamela received her
-                            Certificate in Nurse-Midwifery from Baystate Medical Center in Springfield, MA.
+                            Edie Hoyles, CNM is originally from Springfield, MA.
+                            She received her nursing degree from Burbank
+                            Hospital School of Nursing in Fitchburg, MA. Pamela
+                            received her Certificate in Nurse-Midwifery from
+                            Baystate Medical Center in Springfield, MA.
                         </p>
                     </div>
                     <div className="learn-more-button">
-                        <a href="/about" className="learn-more">
+                        <a href="#about" className="learn-more">
                             Learn More
                         </a>
                     </div>
@@ -74,12 +105,20 @@ export default function MainScreen() {
                 <div className="office-info">
                     <div className="office-details">
                         <p>
-                            Our medical office is equipped with the best of the best. Cutting edge technology machinery that help the doctor identify exactly what your problem is and provide viable
-                            and real solutions. The waiting room is very comfortable with a pleasant atmosphere that makes the situation a little better. Do not hesitate to have a drink and eat from
-                            our fresh fruit while you wait for the doctor to see you.
+                            Our medical office is equipped with the best of the
+                            best. Cutting edge technology machinery that help
+                            the doctor identify exactly what your problem is and
+                            provide viable and real solutions. The waiting room
+                            is very comfortable with a pleasant atmosphere that
+                            makes the situation a little better. Do not hesitate
+                            to have a drink and eat from our fresh fruit while
+                            you wait for the doctor to see you.
                         </p>
                         <p className="smaller">
-                            Our office was recently renovated. New colors, new furniture but most importantly the newest medical equipment that exists today. All that for every one of you.{" "}
+                            Our office was recently renovated. New colors, new
+                            furniture but most importantly the newest medical
+                            equipment that exists today. All that for every one
+                            of you.{" "}
                         </p>
                     </div>
                 </div>
@@ -97,31 +136,73 @@ export default function MainScreen() {
                 <div className="row">
                     <div className="appointment-title">Make an appointment</div>
                     <div className="form-container">
-                        <form action="https://public.herotofu.com/v1/ff38ad90-4f3c-11ed-8970-6943e4ac8982" method="post">
+                        <form
+                            action="https://public.herotofu.com/v1/ff38ad90-4f3c-11ed-8970-6943e4ac8982"
+                            method="post"
+                        >
                             <h1>Personal Information</h1>
 
                             <div className="form-column">
                                 <label for="name">Your Name</label>
-                                <input name="Name" id="name" type="text" placeholder="Name" required className="appointment-input" />
+                                <input
+                                    name="Name"
+                                    id="name"
+                                    type="text"
+                                    placeholder="Name"
+                                    required
+                                    className="appointment-input"
+                                />
                             </div>
                             <div className="form-column">
                                 <label for="email">Your Email</label>
-                                <input name="Email" id="email" type="email" placeholder="E-mail" required className="appointment-input" />
+                                <input
+                                    name="Email"
+                                    id="email"
+                                    type="email"
+                                    placeholder="E-mail"
+                                    required
+                                    className="appointment-input"
+                                />
                             </div>
                             <div className="form-column">
                                 <label for="cellphone">Your phone number</label>
-                                <input name="Phone" id="phone" type="phone" placeholder="Phone Number" required className="appointment-input" />
+                                <input
+                                    name="Phone"
+                                    id="phone"
+                                    type="phone"
+                                    placeholder="Phone Number"
+                                    required
+                                    className="appointment-input"
+                                />
                             </div>
                             <div className="form-column">
                                 <label for="address">Your Address</label>
-                                <input name="Address" id="address" type="address" placeholder="Address" required className="appointment-input" />
+                                <input
+                                    name="Address"
+                                    id="address"
+                                    type="address"
+                                    placeholder="Address"
+                                    required
+                                    className="appointment-input"
+                                />
                             </div>
                             <div className="form-column">
                                 <label for="address">Appointment's Date</label>
-                                <input type="date" id="start" name="trip-start" value="2022-11-22" min="2022-11-22" max="2025-12-31" className="date"></input>
+                                <input
+                                    type="date"
+                                    id="start"
+                                    name="trip-start"
+                                    value="2022-11-22"
+                                    min="2022-11-22"
+                                    max="2025-12-31"
+                                    className="date"
+                                ></input>
                             </div>
 
-                            <button className="appointment-button" type="submit">
+                            <button
+                                className="appointment-button"
+                                type="submit"
+                            >
                                 Make appointment
                             </button>
                         </form>
